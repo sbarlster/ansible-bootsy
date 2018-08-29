@@ -1,0 +1,10 @@
+
+- hosts: localhost
+  connection: local
+  become: true
+  vars:
+    - username: testy
+    - hashed_password: testysfavpw
+  roles:
+    - {role: ../roles/create-user}
+
